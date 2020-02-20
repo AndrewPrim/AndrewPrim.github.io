@@ -1,11 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Wanderlust</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
 </head>
+
 <body>
-    <h1>First commit</h1>
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #151515;
+			z-index: 9000;
+			color: #ffffff;
+			transition: 1.5s;
+			border-bottom: 10px solid #560d0d;
+		}
+		.preloader .h1{
+			top: 50%;
+			left: 50%;
+			display: inline-block;
+			position: absolute;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 3em;
+			opacity: 0;
+			transform: translate(-50%, -50%);
+			animation-name: fadeIn;
+			animation-delay: .4s;
+			animation-duration: 2.2s;
+			animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+		}
+		@keyframes fadeIn {
+			0% {opacity: 0;}
+			20% {opacity: 0.1;}
+			100% {opacity: 1;}
+		}
+		.preloader.domReady {
+			transform: translateY(-100%);
+		}
+		@media screen and (max-width: 430px) {
+			.preloader .h1 {font-size: 2.5em;}
+		}
+	</style>
+
+	<div class="preloader">
+		<span class="h1">
+			Wanderlust
+		</span>
+	</div>
+
+	
+
+	
+	<div id="home" class="home">
+		<!-- TODO: Switch to fixed after -->
+		<nav class="navigation">
+			<div class="container">
+				<div class="row-">
+					<div class="col-12">
+						<div class="top-row">
+							<div class="logo">
+								<a href="#home">
+									Wanderlust<span>.</span>
+								</a>
+							</div>
+							<div class="menu-trigger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="navigation-wraper">
+				<div class="navigation-list">
+					<a href="#about">Welcome Aboard / About</a>
+					<a href="#anthem">Soul / Our Anthem</a>
+					<a href="#rules">Some list Item</a>
+					<a href="#aims">Some list Item</a>
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div class="overlay"></div>
+		<div class="snowboard"></div>
+		<div class="container content-container">
+			<div class="row">
+				<div class="col-12 home-content">
+					<h1 class="h1">Adventure is worthwhile.</h1>
+					<div class="home-desc">
+						<div>Don’t race <span>against others</span></div>
+						<div>race <span>against yourself</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#about" class="scroll-down">
+			Scroll down
+			<div>
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.011 512.011" style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve"><g><g><path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667C514.096,145.416,514.096,131.933,505.755,123.592z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.011 512.011" style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve"><g><g><path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667C514.096,145.416,514.096,131.933,505.755,123.592z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+			</div>
+		</a>
+	</div>
+
+	<div id="about" class="about section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 ">
+					<div class="heading">
+						<span>About us</span>
+						<h2 class="h2">
+							Welcome Aboard
+						</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-block">
+						<p> Привет, надеюсь мы правильно поняли настрой. А по сему, обращаемся к тебе, как к человеку, надеюсь в котором мы не ошиблись. Наше сообщество, создано для конкретных идей и действий, которые мы можем совместно осуществить. Ибо ничто так не облагораживает человека, как мечты которые могут стать реальностью. Пристегнись и полетели!</p>
+						<p>Надеюсь, что каждый из нас будет относится серьезно к этой большой идее, рождённой маленькой группой замечательных людей, которые готовы и могут привнести в свою, и ещё чью то жизнь, особый смысл. Ведь именно в этом и заключается движение вперёд.</p>
+						<p>Аминь!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+	</style>
+	<div id="anthem" class="anthem section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 play-button-col">
+					<a class="popup-youtube" href="https://www.youtube.com/watch?v=Go-jJlGd1so&app=desktop">
+						<div class="play-button ugb-video-popup" data-video='Xk8nJfwOqJc'>
+							<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve"><g><g><path d="M443.86,196.919L141.46,10.514C119.582-2.955,93.131-3.515,70.702,9.016c-22.429,12.529-35.819,35.35-35.819,61.041v371.112c0,38.846,31.3,70.619,69.77,70.829c0.105,0,0.21,0.001,0.313,0.001c12.022-0.001,24.55-3.769,36.251-10.909c9.413-5.743,12.388-18.029,6.645-27.441c-5.743-9.414-18.031-12.388-27.441-6.645c-5.473,3.338-10.818,5.065-15.553,5.064c-14.515-0.079-30.056-12.513-30.056-30.898V70.058c0-11.021,5.744-20.808,15.364-26.183c9.621-5.375,20.966-5.135,30.339,0.636l302.401,186.405c9.089,5.596,14.29,14.927,14.268,25.601c-0.022,10.673-5.261,19.983-14.4,25.56L204.147,415.945c-9.404,5.758-12.36,18.049-6.602,27.452c5.757,9.404,18.048,12.36,27.452,6.602l218.611-133.852c20.931-12.769,33.457-35.029,33.507-59.55C477.165,232.079,464.729,209.767,443.86,196.919z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+						</div>
+					</a>
+					
+				</div>
+				<div class="col-12 heading-col">
+					<div class="heading">
+						<span>Our Anthem</span>
+						<h2 class="h2">
+							Soul
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="rules" class="rules section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading">
+						<span>Golden rules</span>
+						<h2 class="h2">
+							Don't forget
+						</h2>
+					</div>
+				</div>
+				<div class="col-12 rules-col">
+					<div class="text-block">
+						<div class="wraper">
+							<h4 class="h4">Первое правило Бойцовского клуба</h4>
+							<p>Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</p>
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="wraper">
+							<h4 class="h4">Решение принимает кворум.</h4>
+							<p>На приглашение в сообщество кандидатов, на посещение must have мероприятий, и также на удаления с сообщества.</p>
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="wraper">
+							<h4 class="h4">Отвергаешь, предлагай!</h4>
+							<p>Если, не получается участвовать в мероприятии или не лежит душа к этому досугу, организуй для коллектива то что тебе по нраву.</p>
+						</div>
+					</div>
+					<div class="text-block">
+						<div class="wraper">
+							<h4 class="h4">Никто, никого не заставляет!</h4>
+							<p>После трёх пропущенных мероприятий и не предложенных альтернатив приключений, лучше остаться друзьями! Дело не в тебе, просто мы другие.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="aims" class="aims section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading">
+						<span>Aims & goals</span>
+						<h2 class="h2">
+							In future
+						</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<p>Список мероприятий на будущий год</p>
+				</div>
+			</div>
+			<div class="row aims-row">
+				<div class="col-6 aim-block">
+					<div class="aim">Монблан</div>
+					<div class="aim-date">Весна 2020</div>
+				</div>
+				<div class="col-6 aim-block">
+					<div class="aim">Рафтинг Карпаты </div>
+					<div class="aim-date">апрель 2020</div>
+				</div>
+				<div class="col-6 aim-block">
+					<div class="aim">Лыжи / Борды</div>
+					<div class="aim-date">Декабрь-январь. Карпаты, Грузия</div>
+				</div>
+				<div class="col-6 aim-block">
+					<div class="aim">Яхта Киев-Одесса</div>
+					<div class="aim-date">Лето 2020</div>
+				</div>
+				<div class="col-6 aim-block">
+					<div class="aim">Черногория поход</div>
+					<div class="aim-date">Июнь 2020</div>
+				</div>
+				<div class="col-6 aim-block">
+					<div class="aim">Маленькие мотоциклы</div>
+					<div class="aim-date">&mdash;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2" style="color: #560d0d;">
+						Disclaimer
+					</h2>
+					<p>This site is still under development and it is only a test version.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					Created by Andrew Perminov.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.screenMissmatch {
+			position: fixed;
+			z-index: 9999;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: #151515;
+			display: none;
+		}
+		.screenMissmatch h2 {
+			position: absolute;
+			display: inline-block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #ffffff;
+			font-size: 30px;
+		}
+	</style>
+	<div class="screenMissmatch">
+		<h2>Sorry, but the site is not fully flexible yet, please use the phone (x_x)</h2>
+	</div>
+
+	<script src='https://cdn.jsdelivr.net/npm/bigpicture@1.2.3/dist/BigPicture.min.js'></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.menu-trigger').click(function(){
+				$('.navigation-wraper, .menu-trigger').toggleClass('isActive');
+			});
+			$('.navigation-list a').click(function(){
+				$('.navigation-wraper, .menu-trigger').removeClass('isActive');
+			});
+			$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false
+			});
+
+			$('a').click(function (event) {
+				var id = $(this).attr("href");
+				var offset = 70;
+				var target = $(id).offset().top - offset;
+				$('html, body').animate({
+					scrollTop: target
+				}, 500);
+				event.preventDefault();
+			});
+			$('.preloader').delay(1000).queue(function() {
+				$(this).addClass('domReady');
+				$('.snowboard, .home .h1, .home .home-desc, .scroll-down').addClass('appearAnim');
+			});
+		});
+	</script>
+
 </body>
 </html>
+
+
